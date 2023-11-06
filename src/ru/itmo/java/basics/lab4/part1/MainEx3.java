@@ -3,17 +3,28 @@ package ru.itmo.java.basics.lab4.part1;
 import java.util.Scanner;
 
 public class MainEx3 {
+    int d;
+    int e;
+    int f;
+    boolean result;
+
     public static void main(String[] args) {
+        MainEx3 numbers = new MainEx3();
+        numbers.enterNumbers();
+        numbers.mathEquation();
+    }
+
+    public void enterNumbers() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите первое число:");
-        int d = scanner.nextInt();
+        d = scanner.nextInt();
         System.out.println("Введите второе число:");
-        int e = scanner.nextInt();
+        e = scanner.nextInt();
         System.out.println("Введите третье число:");
-        int f = scanner.nextInt();
-        boolean result;
+        f = scanner.nextInt();
+    }
 
-
+    public void mathEquation() {
         if (d + e == f) {
             result = true;
             System.out.println("Результат: " + result);
@@ -21,5 +32,6 @@ public class MainEx3 {
             result = false;
             System.out.println("Результат: " + result);
         }
+
     }
 }

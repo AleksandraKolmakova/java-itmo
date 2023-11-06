@@ -5,11 +5,11 @@ public class MainEx1 {
         int[] ints1 = new int[]{3, -3, 7, 4, 5, 4};
         int[] ints2 = new int[]{1, 4, 5, 8};
 
-        IsSortedArray(ints1);
-        IsSortedArray(ints2);
+        isSortedArray(ints1);
+        isSortedArray(ints2);
     }
 
-    public static void IsSortedArray(int[] ints) {
+    public static void isSortedArray(int[] ints) {
         for (int i = 1; i < ints.length - 1; i++) {
             if (ints[i] > ints[i + 1]) {
                 System.out.println("Please, try again");

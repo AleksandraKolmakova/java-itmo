@@ -9,10 +9,10 @@ public class MainEx2 {
         int length = scanner.nextInt();
         int[] ints = new int[length];
         System.out.println("Введите числа массива: ");
-        Array(ints);
+        array(ints);
     }
 
-    private static void Array(int[] ints) {
+    private static void array(int[] ints) {
         Scanner scanner = new Scanner(System.in);
 
         for (int i = 0; i < ints.length; i++) {

@@ -6,11 +6,11 @@ public class MainEx3 {
         int[] ints = new int[]{5, 6, 7, 2};
         System.out.println(("Array: " + Arrays.toString(ints)));
 
-        ChangeElements(ints);
+        changeElements(ints);
         System.out.println(("Changed Array: " + Arrays.toString(ints)));
     }
 
-        public static void ChangeElements(int[] ints){
+        public static void changeElements(int[] ints){
             int x = ints[0];
             ints[0] = ints[ints.length - 1];
             ints[ints.length - 1] = x;

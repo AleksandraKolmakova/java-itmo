@@ -9,13 +9,13 @@ public class MainEx5 {
         int[] ints3 = new int[]{3, -3, 7, 4, 5, 4};
         int[] ints4 = new int[]{7, 4, 5, 4};
 
-        FirstLastElemArray(ints1);
-        FirstLastElemArray(ints2);
-        FirstLastElemArray(ints3);
-        FirstLastElemArray(ints4);
+        firstLastElemArray(ints1);
+        firstLastElemArray(ints2);
+        firstLastElemArray(ints3);
+        firstLastElemArray(ints4);
     }
 
-    public static void FirstLastElemArray(int[] ints) {
+    public static void firstLastElemArray(int[] ints) {
         if (ints.length >= 2) {
             System.out.println("array = " + Arrays.toString(ints));
             System.out.println("Number 3 is the first or the last element in this array: " + (ints[0] == 3 || ints[ints.length - 1] == 3) + "\n");

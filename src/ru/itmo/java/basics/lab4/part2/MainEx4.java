@@ -7,10 +7,10 @@ public class MainEx4 {
         int[] ints = new int[]{1, 2, 3, 1, 2, 4};
         System.out.println(("Array: " + Arrays.toString(ints)));
 
-        FirstUniqueElement(ints);
+        firstUniqueElement(ints);
     }
 
-    public static void FirstUniqueElement(int[] ints) {
+    public static void firstUniqueElement(int[] ints) {
         for (int i = 0; i < ints.length; i++) {
             boolean result = true;
             for (int k = 0; k < ints.length && result; k++)

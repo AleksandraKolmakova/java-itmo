@@ -7,13 +7,13 @@ public class MainEx6 {
         int[] ints2 = new int[]{7, 4, 5, 4, 1};
         int[] ints3 = new int[]{7, 4, 5, 4};
 
-        System.out.println("This array contains number 1 or 3? : " + FindElements(ints1));
-        System.out.println("This array contains number 1 or 3? : " + FindElements(ints2));
-        System.out.println("This array contains number 1 or 3? : " + FindElements(ints3));
+        System.out.println("This array contains number 1 or 3? : " + findElements(ints1));
+        System.out.println("This array contains number 1 or 3? : " + findElements(ints2));
+        System.out.println("This array contains number 1 or 3? : " + findElements(ints3));
 
     }
 
-    public static boolean FindElements(int[] ints) {
+    public static boolean findElements(int[] ints) {
         boolean result = false;
         for (int x : ints) {
             if (x == 1 || x == 3) {
@@ -21,8 +21,8 @@ public class MainEx6 {
                 break;
             } else
                 result = false;
-            }
-            return result;
+        }
+        return result;
     }
 }
 
