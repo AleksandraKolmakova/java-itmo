@@ -3,28 +3,23 @@ package ru.itmo.java.basics.lab4.part1;
 import java.util.Scanner;
 
 public class MainEx4 {
-    int a;
-    int b;
-    int c;
-    boolean result;
+
+    static boolean result;
 
     public static void main(String[] args) {
-        MainEx4 numbers = new MainEx4();
-        numbers.enterNumbers();
-        numbers.mathEquation();
-    }
 
-    public void enterNumbers() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите первое число:");
-        a = scanner.nextInt();
+        int a = scanner.nextInt();
         System.out.println("Введите второе число:");
-        b = scanner.nextInt();
+        int b = scanner.nextInt();
         System.out.println("Введите третье число:");
-        c = scanner.nextInt();
+        int c = scanner.nextInt();
+
+        mathEquation(a, b, c);
     }
 
-    public void mathEquation() {
+    public static void mathEquation(int a, int b, int c) {
         if (b > a && c > b) {
             result = true;
             System.out.println("Результат: " + result);
