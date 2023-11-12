@@ -2,7 +2,7 @@ package ru.itmo.java.basics.lab5;
 
 public class MainEx2 {
     public static void main(String[] args) {
-        String word1 = "потоп";
+        String word1 = "Потоп";
         String word2 = "око";
         String word3 = "клад";
 
@@ -16,7 +16,7 @@ public class MainEx2 {
 
         public static void isPalindrom1(String word) {
         boolean isPalindrom = false;
-        char[] chars = word.toCharArray();
+        char[] chars = word.toLowerCase().toCharArray();
         int right = chars.length - 1;
         for (int left = 0; left < chars.length / 2; left++) {
             if (chars[left] != chars[right]) {
@@ -30,7 +30,7 @@ public class MainEx2 {
     }
     public static void isPalindrom2(String word) {
         boolean isPalindrom = false;
-        char[] chars = word.toCharArray();
+        char[] chars = word.toLowerCase().toCharArray();
         int left = 0;
         int right = chars.length - 1;
         while (right > left) {
